@@ -34,40 +34,40 @@ public class Task1 {
         Scanner scannerLenght = new Scanner(System.in);
         Random arrayRand = new Random();
         int[] array = new int[scannerLenght.nextInt()];
-        int arrayLenght= array.length;
+        int arrayLenght = array.length;
         int countOver8 = 0;
-        int countEquals1 =0;
+        int countEquals1 = 0;
         int countDell2 = 0;
-        int countNotDell2 =0;
-        int sum =0;
+        int countNotDell2 = 0;
+        int sum = 0;
 
 
-        for (int i = 0;i<array.length;i++ ){
-            array [i] = arrayRand.nextInt(11);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = arrayRand.nextInt(11);
 
-            if(array[i]>8){
+            if (array[i] > 8) {
                 countOver8++;
             }
-            if(array[i]==1) {
+            if (array[i] == 1) {
                 countEquals1++;
             }
-            if(array[i]%2==0) {
+            if (array[i] % 2 == 0) {
                 countDell2++;
-            } else{
+            } else {
                 countNotDell2++;
             }
-                sum=sum+array[i];
-            }
-        System.out.println("Введено число "+ arrayLenght +". Сгенерирован следующий массив:" );
-        System.out.println(Arrays.toString(array) );
+            sum += array[i];
+        }
+        System.out.println("Введено число " + arrayLenght + ". Сгенерирован следующий массив:");
+        System.out.println(Arrays.toString(array));
         System.out.println();
         System.out.println("Информация о массиве:");
-        System.out.println("Количество чисел больше 8: " +countOver8);
-        System.out.println("Количество чисел равных 1: "+ countEquals1);
-        System.out.println("Количество четных чисел: "+ countDell2);
-        System.out.println("Количество нечетных чисел: "+ countNotDell2);
-        System.out.println("Сумма всех элементов массива: "+ sum);
-        }
+        System.out.println("Количество чисел больше 8: " + countOver8);
+        System.out.println("Количество чисел равных 1: " + countEquals1);
+        System.out.println("Количество четных чисел: " + countDell2);
+        System.out.println("Количество нечетных чисел: " + countNotDell2);
+        System.out.println("Сумма всех элементов массива: " + sum);
     }
+}
 
 
