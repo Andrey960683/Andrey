@@ -27,21 +27,21 @@ public class Task2 {
     public static void main(String[] args) {
         int[] array = new int[100];
         Random random = new Random();
-        for(int i = 0; i< array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(10000);
         }
-        int max =array[0];
-        int min =array[0];
+        int max = array[0];
+        int min = array[0];
         int counter = 0;
-        int sum =0;
+        int sum = 0;
         for (int elements : array) {
             if (elements > max)
                 max = elements;
             if (elements < min)
                 min = elements;
-            if(elements%10==0){
+            if (elements % 10 == 0) {
                 counter++;
-                sum+= elements;
+                sum += elements;
             }
 
         }
@@ -50,9 +50,5 @@ public class Task2 {
         System.out.println(counter);
         System.out.println(sum);
 
-
-
-        }
-
-
+    }
 }

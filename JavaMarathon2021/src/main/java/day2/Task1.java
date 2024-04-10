@@ -12,13 +12,13 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner floors = new Scanner(System.in);
         int floor = floors.nextInt();
-        if(floor >= 1 && floor <= 4){
+        if (floor >= 1 && floor <= 4) {
             System.out.println("Малоэтажный дом");
-        } else if (floor>=5 && floor<= 8){
+        } else if (floor >= 5 && floor <= 8) {
             System.out.println("Среднеэтажный дом");
-        } else if(floor>=9){
+        } else if (floor >= 9) {
             System.out.println("Многоэтажный дом");
-        } else{
+        } else {
             System.out.println("Ошибка ввода");
         }
     }

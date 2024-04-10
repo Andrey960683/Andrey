@@ -27,12 +27,12 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String stop = "Stop";
-        while (true){
+        while (true) {
             String city = scanner.nextLine();
-            if(city.equals(stop)){
+            if (city.equals(stop)) {
                 break;
-            } else{
-                switch (city){
+            } else {
+                switch (city) {
                     case "Москва":
                     case "Владивосток":
                     case "Ростов":
